@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Mt523.GitHub.io : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Mt523.GitHub.io</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/mt523">View on GitHub</a>
+
+          <h1 id="project_title">Mt523.GitHub.io</h1>
+          <h2 id="project_tagline"></h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="up-and-running-with-react-native-for-android-on-windows" class="anchor" href="#up-and-running-with-react-native-for-android-on-windows" aria-hidden="true"><span class="octicon octicon-link"></span></a>Up and running with React Native for Android on Windows</h1>
+
+<p>The React Native framework has recently been updated to support the Android platform. Officially, OS X is the only supported operating system for development, but if you're running Windows you're not entirely out of luck. Listed below are the steps needed to get your Windows development environment up and running.</p>
+
+<h3>
+<a id="prerequisites" class="anchor" href="#prerequisites" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prerequisites</h3>
+
+<p>If you've done any previous Android development, you should already have most of this set up.</p>
+
+<ul>
+<li><a href="https://developer.android.com/sdk/index.html">Android SDK</a></li>
+<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Latest JDK</a></li>
+<li>
+<a href="https://nodejs.org/en/">Latest version of Node.js</a> </li>
+<li>ANDROID_HOME environment variable with the correct path to your SDK</li>
+</ul>
+
+<h3>
+<a id="setting-up-the-emulator" class="anchor" href="#setting-up-the-emulator" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setting up the emulator</h3>
+
+<p>You'll need to create an Android emulator to run the React Native project we'll create later, along with the latest SDK platform, which at the time of writing this was API 23. Simply follow the steps outlined in React Native's <a href="https://facebook.github.io/react-native/docs/android-setup.html#content">Android Setup</a> guide.</p>
+
+<h3>
+<a id="installing-the-react-native-packages" class="anchor" href="#installing-the-react-native-packages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installing the React Native packages</h3>
+
+<p>After installing Node, we can use the Node Package Manager to install the React Native packages:</p>
+
+<pre><code>npm install react-native-cli
+</code></pre>
+
+<p>And that's it, you're ready to get going.</p>
+
+<h3>
+<a id="creating-a-new-project" class="anchor" href="#creating-a-new-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating a new project</h3>
+
+<p>Create a new directory for your new project with any name you like. From inside this directory, run the following command:</p>
+
+<pre><code>react-native init (your project name) 
+</code></pre>
+
+<h3>
+<a id="modifying-the-generated-code-for-windows" class="anchor" href="#modifying-the-generated-code-for-windows" aria-hidden="true"><span class="octicon octicon-link"></span></a>Modifying the generated code for Windows</h3>
+
+<p>All credit here goes to GitHub user "mqli" for figuring out this hack work around running the bash files. In your newly created project, follow the <a href="https://gist.github.com/mqli/e1e6576e9838d885a43a">instructions on mqli's Gist.</a></p>
+
+<h3>
+<a id="run-the-project" class="anchor" href="#run-the-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run the project</h3>
+
+<p>You're ready to go. Start your emulator, and run the following commands from your new project's root directory.</p>
+
+<p>Start the webserver</p>
+
+<pre><code>react-native start
+</code></pre>
+
+<p>Run the project</p>
+
+<pre><code>react-native run-android
+</code></pre>
+
+<p>You should now be greeted by the Welcome to React Native screen. </p>
+
+<p><img src="http://i.imgur.com/nYrSGww.png?1" alt=""></p>
+
+<p>For more information, visit the <a href="https://facebook.github.io/react-native/docs/tutorial.html#content">React Native documentation and tutorials</a>.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
